@@ -1,4 +1,5 @@
 FROM ubuntu:bionic
+WORKDIR /app
 RUN \
 # Update
 apt-get update -y && \
