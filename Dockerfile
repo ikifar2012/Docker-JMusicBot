@@ -10,5 +10,6 @@ curl -s https://api.github.com/repos/jagrosh/MusicBot/releases/latest \
 | cut -d '"' -f 4 \
 | wget -qi -
 VOLUME [ "/app" ]
-# COPY . /app
+COPY . /app
+ADD . /app
 CMD java -Dnogui=true -jar JMusicBot-0.2.3-Linux.jar
