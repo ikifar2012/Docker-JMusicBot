@@ -10,6 +10,6 @@ apt-get install default-jre curl wget -y && \
 # | grep "browser_download_url.*Linux.jar" \
 # | cut -d '"' -f 4 \
 # | wget -qi -
-# ADD . /app
-COPY JMusicBot-0.2.3-Linux.jar /app
+ADD . /app
+# COPY JMusicBot-0.2.3-Linux.jar /app
 CMD java -Dnogui=true -jar JMusicBot-0.2.3-Linux.jar
