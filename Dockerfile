@@ -1,6 +1,6 @@
 FROM java:8
 WORKDIR /
-# VOLUME [ "." ]
+VOLUME [ "/" ]
 # RUN \
 # # Update Ubuntu
 # apt-get update -y && \
