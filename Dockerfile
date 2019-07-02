@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 WORKDIR /
 VOLUME [ "." ]
 RUN \
-# Update
+# Update Ubuntu
 apt-get update -y && \
 # Install Java
 apt-get install default-jre curl wget -y \
