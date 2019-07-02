@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 WORKDIR /
-VOLUME [ "." ]
+# VOLUME [ "." ]
 RUN \
 # Update Ubuntu
 apt-get update -y && \
