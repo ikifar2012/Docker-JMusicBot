@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
-WORKDIR /app
-VOLUME [ "/app" ]
+WORKDIR /
+VOLUME [ "/" ]
 RUN \
 # Update
 apt-get update -y && \
@@ -10,6 +10,6 @@ apt-get install default-jre curl wget -y \
 # | grep "browser_download_url.*Linux.jar" \
 # | cut -d '"' -f 4 \
 # | wget -qi -
-COPY /app/JMusicBot-0.2.3-Linux.jar /app/JMusicBot-0.2.3-Linux.jar
+COPY JMusicBot-0.2.3-Linux.jar JMusicBot-0.2.3-Linux.jar
 # COPY JMusicBot-0.2.3-Linux.jar /app
 CMD java -Dnogui=true -jar JMusicBot-0.2.3-Linux.jar
