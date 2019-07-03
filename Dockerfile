@@ -8,6 +8,6 @@ RUN \
  apt-get install default-jre curl wget -y && \
  ls && \
  ./download.sh && \
-COPY JMusicBot-0.2.3-Linux.jar /app/JMusicBot-0.2.3-Linux.jar
+# COPY JMusicBot-0.2.3-Linux.jar /app/JMusicBot-0.2.3-Linux.jar
 # COPY JMusicBot-0.2.3-Linux.jar /app
 CMD java -Dnogui=true -jar JMusicBot-0.2.3-Linux.jar
