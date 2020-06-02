@@ -1,4 +1,4 @@
-FROM openjdk:8-slim-buster
+FROM openjdk:8-jre-buster
 ENV VER=0.2.9
 WORKDIR /app
 RUN apt-get update && \
