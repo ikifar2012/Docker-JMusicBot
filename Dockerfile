@@ -5,4 +5,4 @@ RUN apt-get update && \
 apt-get install wget -y && \
 wget https://github.com/jagrosh/MusicBot/releases/download/${VER}/JMusicBot-${VER}-Linux.jar -O /app/JMusicBot.jar
 VOLUME [ "/app" ]
-CMD java -Dnogui=true -jar JMusicBot.jar
+CMD openjdk -Dnogui=true -jar JMusicBot.jar
