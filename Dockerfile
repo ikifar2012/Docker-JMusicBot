@@ -1,4 +1,4 @@
-FROM openjdk:15-oracle
+FROM openjdk:15-slim-buster
 ENV VER=0.2.9
 WORKDIR /app
 RUN apt-get update && \
