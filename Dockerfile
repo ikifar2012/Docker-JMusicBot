@@ -1,5 +1,9 @@
 FROM java:8
+ENV VER=0.2.9
 WORKDIR /app
+RUN apt-get update && \
+apt-get install wget \
+wget https://github.com/jagrosh/MusicBot/releases/download/${VER}/JMusicBot-${VER}-Linux.jar -O JMusicBot.jar
 VOLUME [ "/app" ]
-COPY JMusicBot-0.2.4-Linux.jar /app/JMusicBot-0.2.4-Linux.jar
-CMD java -Dnogui=true -jar JMusicBot-0.2.4-Linux.jar
+COPY JMusicBot.jar /app/JMusicBot.jar
+CMD java -Dnogui=true -jar JMusicBot.jar
