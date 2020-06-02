@@ -1,4 +1,4 @@
-FROM openjdk:15-slim-buster
+FROM openjdk:15-jdk-slim-buster
 ENV VER=0.2.9
 WORKDIR /app
 RUN apt-get update && \
