@@ -6,4 +6,4 @@ apt-get install wget openjdk-14-jdk -y && \
 whereis java && \
 wget https://github.com/jagrosh/MusicBot/releases/download/${VER}/JMusicBot-${VER}-Linux.jar -O /app/JMusicBot.jar
 VOLUME [ "/app" ]
-ENTRYPOINT [ "/usr/bin/java", "-jar", "JMusicBot.jar" ]
+ENTRYPOINT [ "/usr/bin/java", "-jar", "JMusicBot.jar", "-Dnogui=true" ]
