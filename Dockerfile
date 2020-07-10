@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-ENV VER=0.2.9
+ENV VER=0.2.10
 WORKDIR /app
 RUN apt-get update && \
 apt-get install wget openjdk-14-jdk -y && \
