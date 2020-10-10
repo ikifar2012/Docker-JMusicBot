@@ -1,4 +1,4 @@
-FROM openjdk:latest
+FROM openjdk:16-jdk-alpine
 ENV VER=0.2.10
 WORKDIR /app
 RUN apk add --no-cache wget && \
