@@ -1,4 +1,4 @@
-FROM openjdk:16
+FROM alpine:3.13.6
 ENV VER=0.3.5
 WORKDIR /app
 RUN apk add --no-cache wget libstdc++6 && \
