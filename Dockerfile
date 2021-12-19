@@ -1,4 +1,4 @@
-FROM openjdk:16-alpine
+FROM openjdk:17-ea-22
 ENV VER=0.3.5
 WORKDIR /app
 RUN apk add --no-cache wget libstdc++6  && \
